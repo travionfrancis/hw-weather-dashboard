@@ -8,20 +8,14 @@
 
 
 $(document).ready(function (){
-// local storage for search
-$("#searchCityHistory").on("click", function () {
-    console.log("Pls WOrk Okay??!?");
-    var search = $(this).parent().attr("input");
-    var button = $(this).siblings(".searchButton").val();
+// local storage for search function
+// saves LS data when the search button is clicked
+var searchHistory = document.querySelector(".searchCityHistory");
+window.localStorage.setItem(searchHistory);
 
-    localStorage.setItem(search, button);
-
-})
+});
 
 
-
-
-})
 // What the search bar displays: The 5 day Forecast
 // display that data onto the dashboard html, 5 smaller containers
  -// display City, date, Temperature, Humidity, Wind Speed, UV Index
