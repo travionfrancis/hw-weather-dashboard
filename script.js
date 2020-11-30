@@ -4,14 +4,14 @@
 
 // Search Bar Functionality
 // Search for a City
-// set Local Storgae to save previous City searches
+// set Local Storage to save previous City searches
 
 
 $(document).ready(function (){
 // local storage for search function
 // saves LS data when the search button is clicked
 var searchHistory = document.querySelector(".searchCityHistory");
-window.localStorage.setItem(searchHistory);
+window.localStorage.getItem(searchHistory);
 
 });
 
